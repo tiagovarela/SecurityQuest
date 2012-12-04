@@ -1,0 +1,40 @@
+So, let's say your name is Harry. Sorry if you're a girl, but now you are
+Harry!
+
+We've generated a public/private key combo for you.
+
+Your keys are:
+ > Private key: harry.key
+ > Public key: harry.pub
+
+You've received a message that your friend John sent you and, to securely
+say what he wanted on a open channel, he enciphered it using your public key!
+
+So what to do now? You want to read it right?
+Don't Panic! It's easy :)
+
+You just have to run a simple application to decipher the message.
+Try this:
+ > openssl rsautl -in ciphered.txt -decrypt -inkey harry.key -out message.txt
+
+It's easy to explain each argument:
+ - You run the openssl application with the rsautl command. This RSA utility
+ can be used for some tasks including ciphering and deciphering data.
+
+ - The -in represents the ciphered message that you want to decipher
+
+ - Using -decrypt we inform the program that we want to decipher the input
+  file, remember that the rsautl command serves for more that just
+  deciphering. And yes, decrypt==decipher, they are synonyms.
+
+ - The -inkey represents the key to use, in this case we use the private key.
+
+ - And finally the -out signals to which file to save the output of the
+ deciphered message!
+
+I'm sure you're hands on so you've just tried that and are now ready to
+decipher the password to the next level! Go to the ../pass folder and
+get your hands dirty again!
+
+See you on the next level!
+
