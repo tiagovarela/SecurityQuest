@@ -1,0 +1,37 @@
+##############################################################################
+Welcome to the fourth level of our educational CTF!
+
+This level's theme is: Ciphering 4.0 (Wow so many levels about ciphering!)
+
+During this level you'll learn the basics about symmetric key ciphering!
+##############################################################################
+
+Symmetric key ciphering is a type of ciphering that uses the same key to
+encipher plaintext and to decipher the ciphered text.
+
+Do you remember level01? With the Caesar Cipher? What was the key used to
+cipher the message? Yes, it was the shift value! But that was a pretty simple
+key with a pretty basic method, but never the less this method was ciphering
+with a symmetric key! Because the shift value had to be shared between the
+sender and the receiver.
+
+There are, of course, other methods and algorithms to perform symmetric key
+ciphering. And usually the key size is somewhat larger than a simple number.
+
+Since the key is shared between the group of people that want to exchange
+messages or files, for example, it has to be pretty secure, or else that
+could be a weakness prone to be exploited by an attacker. So what is
+a secure password? A somewhat long and pseudo-randomly generated is usually
+enough. When this key is common or made up of words, an attacker could try
+to do a dictionary attack. This attack attempts to find the password by
+testing multiple inputs that are available in certain list, a real dictionary
+or a list of common passwords, for example.
+
+You can now try this method of ciphering, going to the 'example' folder,
+and reading the README there!
+
+When you feel that you've learnt all of this go to the 'pass' folder and try
+to advance to the following level!
+
+
+See you there!

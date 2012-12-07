@@ -1,0 +1,45 @@
+##############################################################################
+Welcome to the third level of our educational CTF!
+
+This level's theme is: Ciphering 3.0
+
+During this level you'll learn the basics about public key ciphering!
+##############################################################################
+
+Right, you've already tried Caesar Ciphers and hashing and now you want to
+know what to really do with ciphering!
+
+This level will focus on public key ciphering and you'll learn how it works.
+
+Using this method, e.g. to transmit a message between Alice and Bob, both
+parties have a secret key and a public key that are mathematically linked.
+In order to communicate Alice gets Bob's public key and enciphers her message
+with it, and sends that to Bob. He, wanting to read what Alice has written,
+deciphers the message using his private key. Only he could decipher the
+message because a message enciphered with a public key can only be deciphered
+using the corresponding private key.
+
+This sounds great! But some assumptions must be made in order for this
+transaction to occur without hiccups. Imagine that again Alice wants to speak
+with Bob and doesn't have his public key. She asks him for it but Eve
+intercepts this unciphered message and instead sends her public key.
+Eve, being able to listen to Alice's communications, intercepts Alice's
+message to Bob and deciphers it using her private key. Eve, pretending to be
+Alice, can now cipher the message again using Bob's true public key.
+Eve has now performed a "man in the middle" attack!
+So the distribution of public keys should be made over a secure channel,
+or by a trustworthy entity.
+
+There are other uses for public key ciphering, like digital signatures,
+but that will stay for another level!
+
+
+You can now try this method of ciphering, going to the 'example' folder,
+and reading the README there!
+
+When you feel that you've learnt all of this go to the 'pass' folder and try
+to advance to the following level!
+
+
+See you there!
+

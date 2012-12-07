@@ -1,0 +1,50 @@
+##############################################################################
+Welcome to the second level of our educational CTF!
+
+This level's theme is: Ciphering 2.0
+
+During this level you'll learn the basics about hashing!
+##############################################################################
+
+Hashing is also a part of ciphering! But what's this hashing thing I'm talking
+about?
+
+Hashing is a way for you to compress a file's information to a fixed number
+of bits, but it's a one-way compression! This means that you cannot obtain
+the original file from the hashed value!
+
+Did I mention that this value is unique to each file you have? The same file
+generates the same value, but different files, even if the changes are minimal
+generate completely different hashes!
+
+For example, if I have a file with the content:
+ > This SecurityQuest is Awesome.
+The MD5 hash of that would be:
+ > a0ca7700489c78d916b7b9615217e8f4
+
+However, if you do a small change to the content like:
+ > This SecurityQuest is really Awesome.
+The MD5 hash of that file is completely different from the previous version:
+ > 2d561641f92d497884f53df18fb39533
+
+
+As you've noticed this is a very good way to check if a file was modified,
+i.e. check its integrity. For example, when you download a large file, such
+as the install image of a distro like Ubuntu, there is usually a MD5 hash
+that is provided alongside that file. With this you can check the integrity
+of the file that was downloaded to make sure that there weren't cosmic rays
+flipping the bits of your download.
+
+In this level you'll check the integrity of some files. The first 8 characters
+of the modified file's hash is the password to the next level! These files are
+in the 'pass' folder.
+
+Oh and I almost forgot! To see the MD5 hash of a file just run:
+ > md5sum <filename>
+
+We'll give you a hint: It's possible to list the hashes of all the files
+in a folder :) that will make it easier to find the most recent version of
+the modified file.
+
+See you on the next level!
+

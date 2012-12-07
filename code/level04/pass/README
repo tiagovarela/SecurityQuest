@@ -1,0 +1,6 @@
+This ciphered text has been enciphered with TripleDES, using
+the shared key presented on this folder with the ciphered text
+encoded in base64.
+
+Decipher it! :)
+

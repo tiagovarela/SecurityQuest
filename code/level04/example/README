@@ -1,0 +1,44 @@
+So you, Harry, (we've been through this before :) want to send
+your friend John a message. But you want this message to be ciphered!
+
+We've generated a key for you to use, but if you want you can create your own
+with:
+ > openssl rand -base64 112 -out myown.key
+
+This creates a random password with 112 bytes encoded in base64 so that it
+can be properly displayed when you cat your key
+
+
+This is easy to do:
+ > openssl enc -e -des3 -a -in plaintext.txt -pass file:shared.key -out ciphertext.txt
+
+This uses the openssl enc routine to cipher the message using Triple DES
+algorithm, and it's easy to understand:
+ - The flag -e means that we are enciphering the input.
+
+ - The flag -a means that the ciphered output is encoded in base64 so that
+ the ciphertex.txt can be properly displayed on the screen if you want to
+ see it.
+
+ - In the -pass flag we specify what the key is. This uses a special format
+ so we say that the key is in a file and that file is shared.key.
+
+ - The other flags are pretty self explanatory! In goes the plaintext, out
+ comes the ciphertext.
+
+To decipher the message you could do the reverse operation:
+ > openssl enc -d -des3 -a -in ciphertext.txt -pass file:shared.key -out message.txt
+
+This is also pretty simple to understand:
+ - The -d flat means that we are deciphering the output.
+
+ - And now the -in flag has the ciphertext and the -out has the result
+ of the algorithm.
+
+You can even do a md5sum to check that the plaintext.txt and the message.txt
+have the same information.
+
+You are now ready to adventure yourself and find the pass to the next level.
+Go to the ../pass folder and get your hands dirty again!
+
+See you on the next level!
