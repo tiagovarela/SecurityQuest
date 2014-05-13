@@ -6,7 +6,7 @@ with:
  > openssl rand -base64 112 -out myown.key
 
 This creates a random password with 112 bytes encoded in base64 so that it
-can be properly displayed when you cat your key
+can be properly displayed when you cat your key.
 
 
 This is easy to do:
